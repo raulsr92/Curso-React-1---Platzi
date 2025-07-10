@@ -12,10 +12,11 @@ export default function Galeria() {
         
                 <section className='cards-container'>
                     {
-                     listEstadios.map((estadio)=>(
+                     listEstadios.map((estadio, indice)=>(
 
-                        <Card estadioName={estadio} />
-
+                        <Card 
+                            estadioName={estadio}
+                        />
                      ))
                     }
                 </section>
